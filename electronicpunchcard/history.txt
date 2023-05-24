@@ -1,1 +1,2 @@
-Added contract: contract{contractId='1', contractName='Petrom'}
+Added contract: contract{contractId='1', contractName='petrom'}
+Showed all contracts!

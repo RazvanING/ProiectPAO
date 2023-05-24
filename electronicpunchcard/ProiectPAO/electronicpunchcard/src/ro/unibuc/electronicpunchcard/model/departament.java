@@ -35,8 +35,4 @@ public class departament {
         sb.append('}');
         return sb.toString();
     }
-
-    public Object getDepartmentID() {
-        return null;
-    };
 }

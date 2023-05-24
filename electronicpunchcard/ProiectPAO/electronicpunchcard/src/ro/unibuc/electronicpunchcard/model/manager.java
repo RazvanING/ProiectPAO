@@ -43,8 +43,4 @@ public class manager extends person{
         sb.append('}');
         return sb.toString();
     }
-
-    public Object getBadgeID() {
-        return null;
-    }
 }

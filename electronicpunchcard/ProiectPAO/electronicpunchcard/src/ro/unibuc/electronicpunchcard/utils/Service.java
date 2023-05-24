@@ -121,60 +121,20 @@ public class Service extends ServiceInterface {
 
 
         public void showAllEmployees() {
-            for (int key : map.keySet()) {
-                System.out.print(employee.get(key) + ": ");
-
-                for (contract b : map.get(key)) {
-                    System.out.print(b + ", ");
-                }
-
-                System.out.println();
-            }
-
-            writeInTheArchives( "Showed all employees!");
         }
 
         public void showAllDepartments() {
-            for (departament _Departament : departament) {
-                System.out.println(_Departament);
-            }
-
-            writeInTheArchives( "Showed all departments!");
         }
 
         public void showAllContracts() {
-            for (contract _Contract : contract) {
-                System.out.println(_Contract);
-            }
-
-            writeInTheArchives( "Showed all contracts!");
         }
 
         public void fireManager(String badgeId) {
-            for (manager _Manager : manager) {
-                if (_Manager.getBadgeID().equals(badgeId)) {
-                    manager.remove(_Manager);
-                    writeInTheArchives("Fired manager: " + _Manager.toString());
-                    System.out.println("Manager: " + _Manager + " fired!");
-                    return;
-                }
-            }
         }
 
         public void deleteDepartment(String departmentId) {
-            for (departament _Departament : departament) {
-                if (_Departament.getDepartmentID().equals(departmentId)) {
-                    departament.remove(_Departament);
-                    writeInTheArchives("Deleted department: " + _Departament.toString());
-                    System.out.println("Department: " + _Departament + " deleted!");
-                    return;
-                }
-            }
         }
 
         public void addDepartment(ro.unibuc.electronicpunchcard.model.departament departament) {
-            this.departament.add(departament);
-            writeInTheArchives("Added department: " + departament.toString());
-            System.out.println("Department: " + departament + " added!");
         }
     }
